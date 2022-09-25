@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-end - HTML</h2>
+		</header>
+
+		<section>
+			
+			<nav>
+				<ul>
+					<li><a href="homepage.html">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="06-formularios.html">Contato</a></li>
+				</ul>
+
+			</nav>
+
+			<article>
+				
+				<h1>Título Artigo</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar sapien quis lobortis tristique. Vivamus vel viverra massa. In at maximus velit, eu tincidunt erat. Fusce sit amet pharetra velit. Sed at egestas nibh, sed lacinia sem. Ut scelerisque nulla ut cursus faucibus. Aliquam ullamcorper consectetur turpis. Nullam interdum orci ac lectus semper elementum. Vestibulum sit amet sapien elit. Pellentesque elementum erat mauris, vitae congue diam laoreet lacinia. Nunc dictum sollicitudin posuere.</p>
+
+				<p>Ut neque turpis, aliquet in pellentesque eget, efficitur a dolor. Aliquam a libero arcu. Mauris mollis metus lacinia varius dapibus. Vestibulum id dolor et velit placerat gravida dictum accumsan tellus. Proin viverra neque ac felis mattis aliquet. Suspendisse sem mauris, tempus sed facilisis eget, tempus dictum libero. In quis sapien dapibus, tincidunt orci in, tempor lacus. Suspendisse et laoreet odio, id sagittis sem. Morbi consequat metus dapibus neque tincidunt eleifend. Maecenas non dolor convallis, aliquet felis imperdiet, congue ligula. Vivamus iaculis libero id erat convallis semper. Suspendisse pulvinar vulputate sapien, a porta metus vehicula non. Nam commodo ullamcorper varius. Sed porttitor magna orci, vel congue enim feugiat at.</p>
+
+				<p>Donec vitae nulla sit amet diam tristique pulvinar nec porttitor dui. Vivamus scelerisque, orci nec iaculis molestie, magna nisi tincidunt ipsum, in commodo velit est id nibh. Vivamus tristique justo id ante tincidunt, sed tincidunt libero auctor. Mauris pharetra, purus in bibendum dictum, velit magna interdum tellus, et porta felis diam et ipsum. Praesent viverra, orci at pretium facilisis, neque purus efficitur dolor, in suscipit purus est eu velit. Nullam eget ex nec neque congue viverra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam quis venenatis felis, quis ultricies urna. Donec nisi purus, posuere eu tincidunt eget, consectetur sagittis justo. Cras nec lacinia ante.</p>
+
+			</article>
+
+		</section>
+
+		<footer>
+			<p>Feito com 💛 por <a href="https://www.linkedin.com/in/pauloafonso-dev/" target="_blank">Paulo Afonso</a></p>
+		</footer>
+		
+	</body>
+</html>
