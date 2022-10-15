@@ -62,6 +62,13 @@
   article p {
   margin: 5px;
   }
+  /* estilo do formulário */
+  form div {
+    background: #fff;
+    border: 1px solid #999;
+    margin: 10px;
+    padding: 10px;
+  }
 
   /* Clear floats after the columns */
   section::after {
