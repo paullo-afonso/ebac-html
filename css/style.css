@@ -39,8 +39,16 @@
     font-size: 1.6rem; /* equivalente a 16px */
   }
 
+  h1 {
+    font-size: 1.8rem;
+  }
+
   h2 {
-    font-size: 2rem; /* equivalente a 20px */
+    font-size: 4rem; 
+  }
+
+  h3 {
+    font-size: 1.5rem;
   }
 
   .topo {
@@ -106,7 +114,8 @@
     border-right: 1px solid #33f;
     */
     margin: 1rem 2rem;
-    padding: 20px;
+    padding: 2rem;
+    text-align: left;
   }
   label {
     margin-bottom: 1rem;
@@ -114,10 +123,13 @@
     font-family: sans-serif;
     font-weight: bold;
     color: #66f;
+    text-align: left;
   }
+
   input {
     padding: 1rem;
   }
+
   [type="text"], [type="email"], textarea, label {
     width: 100%;
     display: block;
