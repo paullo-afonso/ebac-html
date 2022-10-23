@@ -102,19 +102,27 @@
   article p {
   margin: 5px;
   }
+  .navegacao a {
+    display: block;
+    margin-bottom: .5rem;
+  }
+  .navegacao li {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+  }
   
   /* estilo do formulário */
-  form div {
+  form {
+    background: #eee;
+    padding: 0.1rem;
+  }
+
+   form div {
     background: #fff;
     border: 0;
     border-bottom: 1px solid #33f;
-    /*
-    border-top: 1px solid #33f;
-    border-left: 1px solid #33f;
-    border-right: 1px solid #33f;
-    */
-    margin: 1rem 2rem;
-    padding: 2rem;
+    margin: 1rem;
+    padding: 1.5rem;
     text-align: left;
   }
   label {
